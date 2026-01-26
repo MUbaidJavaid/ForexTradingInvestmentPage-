@@ -1,0 +1,29 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+ /* Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+ 
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--navy-deep));
+ 
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #4c1d95, #6b21a8, #86198f); /* Gradient scrollbar thumb */
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #86198f, #6b21a8, #4c1d95);
+}
+
+/* Selection styling */
+::selection {
+  background: hsl(var(--cyan-electric) / 0.3);
+  color: hsl(var(--foreground));
+}
